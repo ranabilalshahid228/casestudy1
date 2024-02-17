@@ -8,7 +8,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://i.gifer.com/CREw.gif");
+             background-image: url("https://cdn.govexec.com/media/featured/wwt6.gif");
              background-attachment: fixed;
              background-size: cover;
          }}
