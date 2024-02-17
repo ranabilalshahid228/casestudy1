@@ -59,8 +59,3 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
-st.markdown(
- st.sidebar:
-  st.image("https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg", width=150)
-    unsafe_allow_html=True
-)
