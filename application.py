@@ -64,7 +64,7 @@ add_bg_from_url()
 st.markdown(
     """
     <div class="top-right-image">
-        <img src="YOUR_IMAGE_URL_HERE" alt="Top Right Image" style="width: 100px;">
+        <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg" alt="Top Right Image" style="width: 100px;">
     </div>
     """, unsafe_allow_html=True
 )
