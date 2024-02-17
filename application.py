@@ -30,7 +30,7 @@ st.markdown(
 
 st.markdown(
     """
-    <div style="text-align: right; margin-top: 20px;">
+    <div style="text-align: bottom; margin-top: 20px;">
     <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg" alt="Logo" style="width: 300px; margin-bottom: 5px;">
     </div>""", unsafe_allow_html=True
 )
