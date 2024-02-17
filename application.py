@@ -59,3 +59,37 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
+    import streamlit as st
+
+# Custom CSS to position and style images
+st.markdown(
+    """
+    <style>
+    .image-container {
+        position: relative;
+        right: 0;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .image-container img {
+        width: 300px; /* Set the width as per your requirement */
+        height: auto;
+        margin-bottom: 5px; /* Adjust spacing between images */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Display images in a container
+st.markdown(
+    """
+    <div class="image-container">
+        <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg" alt="Histogram">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
