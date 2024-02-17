@@ -34,7 +34,7 @@ st.markdown(
 
 # st.image("7.jpeg", width=300)
 # Setup the layout
-st.title('Garment Production Prediction by Bilal Rana')
+st.title('Garment Production Prediction CaseStudy')
 
 
 # Input widgets for user input, they will appear on the main body, to the right of the images
@@ -58,4 +58,4 @@ if st.button('Predict'):
     prediction = predict(input_df)  # Ensure your predict function is compatible with this input format
 
     # Display the prediction
-    st.write(f'Predicted Total Production: {prediction}')
+    st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
