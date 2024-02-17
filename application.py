@@ -67,7 +67,7 @@ st.markdown(
     <style>
     .image-container {
         position: relative;
-        right: 0;
+        top-right: 0;
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -87,7 +87,7 @@ st.markdown(
 st.markdown(
     """
     <div class="image-container">
-        <img src="https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg" alt="Histogram">
+        <img src="https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg" alt="QR code">
     </div>
     """,
     unsafe_allow_html=True
