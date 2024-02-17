@@ -28,12 +28,7 @@ st.markdown(
     </div>""", unsafe_allow_html=True
 )
 
-st.markdown(
-    """
-    <div style="text-align: bottom; margin-top: 20px;">
-    <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg" alt="Logo" style="width: 300px; margin-bottom: 5px;">
-    </div>""", unsafe_allow_html=True
-)
+
 
 
 
@@ -64,3 +59,9 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
+st.markdown(
+    """
+    <div style="text-align: right; margin-top: 20px;">
+    <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg" alt="Logo" style="width: 300px; margin-bottom: 5px;">
+    </div>""", unsafe_allow_html=True
+)
