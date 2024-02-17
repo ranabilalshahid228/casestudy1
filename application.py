@@ -8,7 +8,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://miro.medium.com/v2/resize:fit:1160/1*8wCivXvVBBWy68X4Jb7dGQ.gif");
+             background-image: url("https://i.gifer.com/CREw.gif");
              background-attachment: fixed;
              background-size: cover;
          }}
