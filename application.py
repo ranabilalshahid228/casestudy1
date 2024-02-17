@@ -1,8 +1,6 @@
 import streamlit as st
-import pandas as pd
 from main import predict
-from sklearn.metrics import mean_squared_error, r2_score
-from scipy.stats import boxcox
+import pandas as pd
 
 # Function to add background image
 def add_bg_from_url():
@@ -22,6 +20,7 @@ def add_bg_from_url():
 # Add the background image
 add_bg_from_url()
 
+
 st.markdown(
     """
     <div style="text-align: center; margin-top: 20px;">
@@ -29,9 +28,14 @@ st.markdown(
     </div>""", unsafe_allow_html=True
 )
 
+
+
+
+
 # st.image("7.jpeg", width=300)
 # Setup the layout
 st.title('Garment Production Prediction CaseStudy')
+
 
 # Input widgets for user input, they will appear on the main body, to the right of the images
 department = st.selectbox('Department', options=['Gloves', 'T-Shirt', 'Sweatshirt'])
@@ -52,20 +56,6 @@ if st.button('Predict'):
 
     # Call the predict function
     prediction = predict(input_df)  # Ensure your predict function is compatible with this input format
-    
-    # Apply Box-Cox transformation to prediction if necessary
-    # In this example, I'm assuming prediction is a single value, if it's an array, loop through it
-    prediction_bc, _ = boxcox([prediction])
 
-    # Display the transformed prediction
-    st.write(f'Predicted Total Production (Box-Cox transformed): {prediction_bc}')
-
-    # Calculate R^2 and MSE
-    # Assuming you have ground truth values for comparison
-    # Replace ground_truth with actual values
-    ground_truth = [100]  # Example ground truth value
-    r2 = r2_score(ground_truth, [prediction])
-    mse = mean_squared_error(ground_truth, [prediction])
-    
-    st.write(f'R^2 Score: {r2}')
-    st.write(f'Mean Squared Error: {mse}')
+    # Display the prediction
+    st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
