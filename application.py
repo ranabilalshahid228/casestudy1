@@ -63,10 +63,6 @@ if st.button('Predict'):
 # Display a caption in Streamlit
 st.caption("R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036")
 
-
-
-    import streamlit as st
-
 # Custom CSS to position and style images
 
 st.markdown(
