@@ -59,10 +59,7 @@ if st.button('Predict'):
     prediction = predict(input_df)  # Ensure your predict function is compatible with this input format
 
     # Display the prediction
-# Display the prediction result in red color using st.markdown in Streamlit
-st.markdown(
-    f"<p style='color: red;'>Predicted Total Production for Selected Department and at selected Workers: {prediction}</p>",
-    unsafe_allow_html=True
+    st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 )
 
 # Display a caption in Streamlit
