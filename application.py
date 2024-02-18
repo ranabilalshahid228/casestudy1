@@ -64,7 +64,7 @@ if st.button('Predict'):
     st.write(f"Actual Productivity Prediction: :blue[{prediction}]")
     st.markdown(
     """
-    T<span style="background-color: #262730">R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036</span> using Streamlit.
+    T<span style="background-color: #09ab3b">R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036</span>
     """,
     unsafe_allow_html=True
 )
