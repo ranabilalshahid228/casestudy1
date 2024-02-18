@@ -62,6 +62,12 @@ if st.button('Predict'):
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 
     st.write(f"Actual Productivity Prediction: :blue[{prediction}]")
+    st.markdown(
+    """
+    This is a normal text and <span style="background-color: #FFFF00">this is a highlighted text</span> using Streamlit.
+    """,
+    unsafe_allow_html=True
+)
 # Display a caption in Streamlit
 st.caption("R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036")
 
