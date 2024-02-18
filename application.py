@@ -89,30 +89,12 @@ st.markdown(
     """
     <div class="image-container">
         <img src="https://i.pinimg.com/474x/b4/f8/65/b4f8650390a951355ef8f38db7f15a09.jpg" alt="QR code">
+                <img src="https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg" alt="QR code">
     </div>
     """,
     unsafe_allow_html=True
 )
-    import streamlit as st
-
-# Custom CSS to position and style images
-st.markdown(
-    """
-    <style>
-    .image-container {
-        position: fixed; /* Change from relative to fixed */
-        top: 10px; /* Align to the top of the viewport */
-        left: 10px; /* Align to the right of the viewport */
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .image-container img {
-        width: 200px; /* Set the width as per your requirement */
-        height: auto;
-        margin-bottom: 5px; /* Adjust spacing between images, if needed */
-    }
+   
     </style>
     """,
     unsafe_allow_html=True
