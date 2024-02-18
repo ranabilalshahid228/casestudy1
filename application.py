@@ -34,7 +34,8 @@ st.markdown(
 
 # st.image("7.jpeg", width=300)
 # Setup the layout
-st.title('Garment Production Prediction CaseStudy')
+st.markdown("<h1 style='color: black;'>Garment Production Prediction CaseStudy</h1>", unsafe_allow_html=True)
+
 
 
 # Input widgets for user input, they will appear on the main body, to the right of the images
