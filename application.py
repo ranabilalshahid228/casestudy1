@@ -60,7 +60,6 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
-    r2_train = # your R-squared value for the training set
 
 # Using st.write
 st.write(f"R-squared (Train): {r2_train}")
