@@ -60,7 +60,7 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
-    prediction = "-10"
+    prediction = ""
 
 st.write(f"prediction: :blue[{prediction}]")
 # Display a caption in Streamlit
