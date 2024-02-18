@@ -67,8 +67,8 @@ st.markdown(
     <style>
     .image-container {
         position: fixed; /* Change from relative to fixed */
-        top: 05; /* Align to the top of the viewport */
-        right: 05; /* Align to the right of the viewport */
+        top: 05px; /* Align to the top of the viewport */
+        right: 05px; /* Align to the right of the viewport */
         margin: 10px;
         display: flex;
         flex-direction: column;
