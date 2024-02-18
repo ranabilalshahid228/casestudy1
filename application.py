@@ -68,14 +68,14 @@ st.markdown(
     .image-container {
         position: fixed; /* Change from relative to fixed */
         top: 10; /* Align to the top of the viewport */
-        right: 10; /* Align to the right of the viewport */
+        right: 0; /* Align to the right of the viewport */
         margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
     .image-container img {
-        width: 400px; /* Set the width as per your requirement */
+        width: 300px; /* Set the width as per your requirement */
         height: auto;
         margin-bottom: 5px; /* Adjust spacing between images, if needed */
     }
