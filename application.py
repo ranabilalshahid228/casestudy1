@@ -88,7 +88,7 @@ st.markdown(
 st.markdown(
     """
     <div class="image-container">
-        <img src="https://i.pinimg.com/736x/b4/f8/65/b4f8650390a951355ef8f38db7f15a09/" alt="QR code">
+        <img src="https://drive.google.com/file/d/1v0SCCBzHvgdbo2xePDfB5ZCCriNmtCip/view?usp=drive_link/" alt="QR code">
     </div>
     """,
     unsafe_allow_html=True
