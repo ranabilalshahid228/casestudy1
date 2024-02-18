@@ -69,7 +69,7 @@ st.markdown(
     """
     <style>
     .image-container {
-        position: Fixed; /* Change from relative to fixed */
+        position: text-align; /* Change from relative to fixed */
         top: 10px; /* Align to the top of the viewport */
         right: 10px; /* Align to the right of the viewport */
         margin: 10px;
@@ -91,7 +91,7 @@ st.markdown(
 st.markdown(
     """
     <div class="image-container">
-        <img src="https://i.pinimg.com/474x/b4/f8/65/b4f8650390a951355ef8f38db7f15a09.jpg" alt="QR code">
+        <img src="https://i.pinimg.com/736x/6f/3d/a2/6f3da2dc0b483e5c9ff991b2247b2b39.jpg" alt="QR code">
         
     </div>
     """,
