@@ -40,10 +40,9 @@ st.markdown("<h1 style='color: black;'>Garment Production Prediction CaseStudy</
 
 # Input widgets for user input, they will appear on the main body, to the right of the images
 department = st.selectbox('Department', options=['Gloves', 'T-Shirt', 'Sweatshirt'])
-quarter = st.selectbox('Quarter', options=['Quarter1 (January to March)', 'Quarter2(April to June)', 'Quarter3(July to September)', 'Quarter4(October to December)'])
+quarter = st.selectbox('Quarter', options=['Quarter1', 'Quarter2', 'Quarter3', 'Quarter4'])
 no_of_workers = st.number_input('Number of Workers', min_value=25, max_value=100, value=25)
 defects_day = st.number_input('Unproductive days per month', min_value=1, max_value=10, value=5)
-
 
 # Predict button
 if st.button('Predict'):
@@ -61,7 +60,6 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
-
 # Display a caption in Streamlit
 st.caption("R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036")
 
