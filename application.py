@@ -61,7 +61,11 @@ if st.button('Predict'):
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 
-st.text("This is some plain text. It will be displayed in a fixed-width font.")
+import streamlit as st
+
+# Adding plain text to your Streamlit app
+st.text("R-squared (Train): 0.9135524926797545")
+
            
     import streamlit as st
 
