@@ -61,7 +61,7 @@ if st.button('Predict'):
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 
-st.markdown("<h3 style='color: black;'>R-squared (Train): 0.9135524926797545</h3>", unsafe_allow_html=True)
+st.markdown("<h2 style='color: black;'>R-squared (Train): 0.9135524926797545</h2>", unsafe_allow_html=True)
 
            
     import streamlit as st
