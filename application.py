@@ -75,7 +75,7 @@ st.markdown(
         align-items: flex-end;
     }
     .image-container img {
-        width: 400px; /* Set the width as per your requirement */
+        width: 350px; /* Set the width as per your requirement */
         height: auto;
         margin-bottom: 5px; /* Adjust spacing between images, if needed */
     }
