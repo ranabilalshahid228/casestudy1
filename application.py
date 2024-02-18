@@ -69,10 +69,36 @@ st.markdown(
     """
 st.markdown(
     """
-    <div style="text-align: center; margin-bottom: 20px;">
-    <img src=" https://i.pinimg.com/736x/6f/3d/a2/6f3da2dc0b483e5c9ff991b2247b2b39.jpg"style="width: 300px; margin-bottom: 5px;">
-    </div>""", unsafe_allow_html=True
+    <style>
+    .image-container {
+        position: text-align; /* Change from relative to fixed */
+        top: 10px; /* Align to the top of the viewport */
+        right: 10px; /* Align to the right of the viewport */
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .image-container img {
+        width: 100px; /* Set the width as per your requirement */
+        height: auto;
+        margin-bottom: 5px; /* Adjust spacing between images, if needed */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
+
+# Display images in a container
+st.markdown(
+    """
+    <div class="image-container">
+        <img src="https://i.pinimg.com/736x/6f/3d/a2/6f3da2dc0b483e5c9ff991b2247b2b39.jpg" alt="QR code">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.markdown(
     """
