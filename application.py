@@ -94,37 +94,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown(
-    """
-    <style>
-    .image-container {
-        position: fixed; /* Change from relative to fixed */
-        bottom: 10px; /* Align to the top of the viewport */
-        left: 10px; /* Align to the right of the viewport */
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .image-container img {
-        width: 200px; /* Set the width as per your requirement */
-        height: auto;
-        margin-bottom: 5px; /* Adjust spacing between images, if needed */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-# Display images in a container
-st.markdown(
-    """
-    <div class="image-container">
-        <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg" alt="QR">
-        
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-   
 
