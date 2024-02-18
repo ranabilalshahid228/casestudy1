@@ -58,10 +58,8 @@ if st.button('Predict'):
     # Call the predict function
     prediction = predict(input_df)  # Ensure your predict function is compatible with this input format
 
-    # Display the prediction
-    st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 
-    st.write(f" Actual Productivity Prediction: :blue[Actual Productivity Prediction:{prediction}]")
+    st.write(f":blue[Actual Productivity Prediction:{prediction}]")
     st.markdown(
     """
     <span style="background-color: #09ab3b">R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036</span>
