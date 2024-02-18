@@ -42,7 +42,7 @@ st.markdown("<h1 style='color: black;'>Garment Production Prediction CaseStudy</
 department = st.selectbox('Department', options=['Gloves', 'T-Shirt', 'Sweatshirt'])
 quarter = st.selectbox('Quarter', options=['Quarter1', 'Quarter2', 'Quarter3', 'Quarter4'])
 no_of_workers = st.number_input('Number of Workers', min_value=25, max_value=100, value=25)
-defects_day = st.number_input('Unproductive days per month', min_value=1, max_value=10, value=5, placeholder="unproductive days in month(maximum 10) )
+defects_day = st.number_input('Unproductive days per month', min_value=1, max_value=10, value=5, placeholder=unproductive days in monthmaximum 10)
 
 # Predict button
 if st.button('Predict'):
