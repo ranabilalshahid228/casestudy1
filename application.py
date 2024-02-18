@@ -90,12 +90,14 @@ st.markdown(
     <div class="image-container">
         <img src="https://i.pinimg.com/474x/b4/f8/65/b4f8650390a951355ef8f38db7f15a09.jpg" alt="QR code">
         
- <div style="text-align: center; margin-bottom: 20px;">
-    <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg" alt="Logo" style="width: 300px; margin-bottom: 5px;">
-    </div>""", unsafe_allow_html=True
     </div>
     """,
     unsafe_allow_html=True
 )
 
-
+st.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg alt="Logo" style="width: 300px; margin-bottom: 5px;">
+    </div>""", unsafe_allow_html=True
+)
