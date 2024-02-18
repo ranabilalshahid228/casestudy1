@@ -66,8 +66,9 @@ st.markdown(
     """
     <style>
     .image-container {
-        position: relative;
-        top-right: 0;
+        position: fixed; /* Change from relative to fixed */
+        top: 0; /* Align to the top of the viewport */
+        right: 0; /* Align to the right of the viewport */
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -76,7 +77,7 @@ st.markdown(
     .image-container img {
         width: 100px; /* Set the width as per your requirement */
         height: auto;
-        margin-bottom: 5px; /* Adjust spacing between images */
+        margin-bottom: 5px; /* Adjust spacing between images, if needed */
     }
     </style>
     """,
@@ -92,4 +93,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
