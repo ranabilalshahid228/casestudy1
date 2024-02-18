@@ -60,6 +60,14 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
+    r2_train = # your R-squared value for the training set
+
+# Using st.write
+st.write(f"R-squared (Train): {r2_train}")
+
+# Or using st.markdown for more control over the formatting (if needed)
+st.markdown(f"**R-squared (Train):** {r2_train}")
+
     import streamlit as st
 
 # Custom CSS to position and style images
