@@ -98,6 +98,6 @@ st.markdown(
 st.markdown(
     """
     <div style="text-align: center; margin-bottom: 20px;">
-    <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg alt="Logo" style="width: 300px; margin-bottom: 5px;">
+    <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg"style="width: 300px; margin-bottom: 5px;">
     </div>""", unsafe_allow_html=True
 )
