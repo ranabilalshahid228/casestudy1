@@ -61,7 +61,7 @@ if st.button('Predict'):
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
 
-    st.write(f"background-color: #09ab3b Actual Productivity Prediction: :blue[{prediction}]")
+    st.write(f"style=background-color: #09ab3b Actual Productivity Prediction: :blue[{prediction}]")
     st.markdown(
     """
     <span style="background-color: #09ab3b">R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036</span>
