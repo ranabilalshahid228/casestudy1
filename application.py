@@ -23,7 +23,7 @@ add_bg_from_url()
 
 st.markdown(
     """
-    <div style="text-align: center; margin-top: 20px;">
+    <div style="text-align: center; margin-top: 5px;">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQaB3z7wmDwQmROUxci8vNh8_jrPNTrkgHAS2Yx3c5Q&s" alt="Logo" style="width: 300px; margin-bottom: 5px;">
     </div>""", unsafe_allow_html=True
 )
