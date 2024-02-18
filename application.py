@@ -67,7 +67,7 @@ if st.button('Predict'):
 # Custom CSS to position and style images
 st.markdown(
     """
-    <div style="text-align: right; margin-bottom: 20px;">
+    <div style="text-align: right; margin-bottom: 0px;">
     <img src=" https://i.pinimg.com/736x/91/f6/85/91f68589a4576966e3ec3369593c6c78.jpg"style="width: 600px; margin-bottom: 5px;">
     </div>""", unsafe_allow_html=True
 )
