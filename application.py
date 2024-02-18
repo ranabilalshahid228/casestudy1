@@ -60,8 +60,9 @@ if st.button('Predict'):
 
     # Display the prediction
     st.write(f'Predicted Total Production for Selected Department and at selected Workers: {prediction}')
-   # Display a caption with black text using st.markdown
-st.caption( "R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036")
+# Display a caption in Streamlit
+st.caption("R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036")
+
 
 
     import streamlit as st
