@@ -69,7 +69,7 @@ if st.button('Predict'):
 st.markdown(
     """
     <div style="text-align: left; margin-bottom: 20px;">
-    <img src=" https://i.pinimg.com/736x/91/f6/85/91f68589a4576966e3ec3369593c6c78.jpg"style="width: 600px; margin-bottom: 5px;">
+    <img src=" https://github.com/ranabilalshahid228/casestudy1/blob/main/20240218_015725.jpg"style="width: 600px; margin-bottom: 5px;">
     </div>""", unsafe_allow_html=True
 )
 st.markdown(
