@@ -66,7 +66,7 @@ st.markdown(
     """
     <style>
     .image-container {
-        position: text-align; /* Change from relative to fixed */
+        position: Fixed; /* Change from relative to fixed */
         top: 10px; /* Align to the top of the viewport */
         right: 10px; /* Align to the right of the viewport */
         margin: 10px;
