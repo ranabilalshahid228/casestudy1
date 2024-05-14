@@ -1,52 +1,83 @@
 import streamlit as st
+from main import predict
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import time
 
-# Load data
-data = pd.read_csv('datagarment (2).csv')
+# Function to add background image
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.govexec.com/media/featured/wwt6.gif");
+             background-attachment: fixed;
+             background-size: cover;
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+    )
 
-# Placeholder for real-time data updates
-placeholder = st.empty()
+# Add the background image
+add_bg_from_url()
 
-# Generate some example real-time data
-for _ in range(100):
-    # Simulate reading new data
-    new_data = np.random.randn(1, data.shape[1])
-    new_df = pd.DataFrame(new_data, columns=data.columns)
-    data = pd.concat([data, new_df], ignore_index=True)
-    
-    # Plot the histogram of residuals
-    residuals = data['Residuals']
-    fig, ax = plt.subplots(1, 3, figsize=(15, 5))
-    
-    ax[0].hist(residuals, bins=30, color='green', edgecolor='black')
-    ax[0].set_title('Histogram of Residuals')
-    ax[0].set_xlabel('Residuals')
-    ax[0].set_ylabel('Frequency')
 
-    # Q-Q plot
-    sorted_residuals = np.sort(residuals)
-    theoretical_quantiles = np.random.normal(0, 1, len(sorted_residuals))
-    theoretical_quantiles.sort()
-    ax[1].scatter(theoretical_quantiles, sorted_residuals, color='blue')
-    ax[1].plot(theoretical_quantiles, theoretical_quantiles, color='red')
-    ax[1].set_title('Q-Q Plot')
-    ax[1].set_xlabel('Theoretical Quantiles')
-    ax[1].set_ylabel('Ordered Values')
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: 5px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQaB3z7wmDwQmROUxci8vNh8_jrPNTrkgHAS2Yx3c5Q&s" alt="Logo" style="width: 300px; margin-bottom: 5px;">
+    </div>""", unsafe_allow_html=True
+)
 
-    # R-squared plot (assuming `True Values` and `Predicted Values` columns)
-    true_values = data['True Values']
-    predicted_values = data['Predicted Values']
-    ax[2].scatter(true_values, predicted_values, color='green')
-    ax[2].plot(true_values, true_values, color='red', linestyle='--')
-    ax[2].set_title('R-squared Plot')
-    ax[2].set_xlabel('True Values')
-    ax[2].set_ylabel('Predicted Values')
 
-    # Display the plots in the Streamlit app
-    placeholder.pyplot(fig)
 
-    # Pause to simulate real-time updates
-    time.sleep(1)
+
+
+# st.image("7.jpeg", width=300)
+# Setup the layout
+st.markdown("<h1 style='color: black;'>Garment Production Prediction</h1>", unsafe_allow_html=True)
+
+
+
+# Input widgets for user input, they will appear on the main body, to the right of the images
+department = st.selectbox('Department', options=['Gloves', 'T-Shirt', 'Sweatshirt'])
+quarter = st.selectbox('Quarter', options=['Quarter1', 'Quarter2', 'Quarter3', 'Quarter4'])
+no_of_workers = st.number_input('Number of Workers', min_value=25, max_value=100, value=25)
+defects_day = st.number_input('Unproductive days per month', min_value=1, max_value=10, value=5)
+
+# Predict button
+if st.button('Predict'):
+    # Prepare the input data in the format expected by your predict function
+    input_data = {
+        'department': [department],
+        'quarter': [quarter],
+        'no_of_workers': [no_of_workers],
+        'defects_day': [defects_day],
+    }
+    input_df = pd.DataFrame(input_data)
+
+    # Call the predict function
+    prediction = predict(input_df)  # Ensure your predict function is compatible with this input format
+
+
+    st.write(f":blue[Actual Productivity Prediction:{prediction}]")
+    st.markdown(
+    """
+    <span style="background-color: #09ab3b">R-squared (Train): 0.9135524926797545 and Normalized MSE:0.0036</span>
+    """,
+    unsafe_allow_html=True
+)
+
+# Custom CSS to position and style images
+
+st.markdown(
+    """
+    <div style="text-align: left; margin-bottom: 20px;">
+    <img src="https://i.pinimg.com/736x/d1/64/42/d16442754c442cc9d22d40f5c529bba7.jpg"style="width: 600px; margin-bottom: 5px;">
+    </div>""", unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src=" https://i.pinimg.com/736x/06/de/62/06de624722bcde1117f99d65d5530f43.jpg"style="width: 300px; margin-bottom: 5px;">
+    </div>""", unsafe_allow_html=True
+)
